@@ -2,11 +2,11 @@
 
 /**
  *
- *  * Description: main - Prints out a string to stdout.
+ *   Description: main - Prints out a string to stdout.
  *
- *   * Return: 0 if success.
+ *   Return: 0 if success.
  *
- *    */
+ */
 
 int main(void)
 
