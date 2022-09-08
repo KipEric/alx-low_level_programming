@@ -1,22 +1,21 @@
 #include <stdio.h>
-
 /**
- * main - prints the size of many variables
- *
- * return: 0 if successful
+ * main - Prints out the sizes of various data types on the computer
+ * this program is compiled on.
+ * Return: 0 if success.
  */
-int main (void)
+int main(void)
 {
-	char a:
-	int b;
-	long int c;
-	long long int d;
-	float e;
+	char c;
+	int i;
+	long l;
+	long long ll;
+	float f;
 
-	printf("Size of a char %d is \n", sizeof(a));
-	printf("Size of an int %d is \n", sizeof(b));  
-	printf("Size of a long int %d is \n", sizeof(c));  
-	printf("Size of a long long int %d is \n", sizeof(d));  
-	printf("Size of a float %d is \n", sizeof(e));
-      return (0);
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(l));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(ll));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	return (0);
 }      
