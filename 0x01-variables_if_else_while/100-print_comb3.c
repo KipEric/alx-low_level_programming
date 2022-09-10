@@ -9,14 +9,18 @@ int main(void)
 
 	for (i = 0; i < 9; i++)
 	{
-		for (x = i + 1; x < 10; x++)
+		for (x = 1; x < 9; x++)
 			{
-				putchar((i % 10) + '0');
-				putchar((x % 10) + '0');
-				if (i == 8 && x == 9)
-					continue;
-				putchar(',');
-				putchar(' ');
+				if (x > i)
+				{
+					putchar(i + '0');
+					putchar(x + '0');
+					if (i != );
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 	}
 	putchar('\n');
