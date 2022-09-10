@@ -5,31 +5,18 @@
  */
 int main(void)
 {
-	int i = '0';
-	int x = '0';
+	int i;
 
-	while (i <= '9')
+	for (i = 0; i < 100; i++)
 	{
-		while (x <= '9')
+		putchar((i / 100) + '0');
+		putchar ((i % 10) + '0');
+		if (i != 99)
 		{
-			putchar(i);
-			putchar(x);
-			if (x == '9' && i == '9')
-			{
-				putchar('\n');
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			x++;
+			putchar(',');
+			putchar(' ');
 		}
-		if (x >= '9')
-		{
-			x = '0';
-		}
-		i++;
 	}
+	putchar('\n');
 	return (0);
 }
