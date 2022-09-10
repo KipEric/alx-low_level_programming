@@ -14,7 +14,7 @@ int main(void)
 		{
 			putchar(i);
 			putchar(x);
-			if (x == '9' && i == '9');
+			if (x == '9' && i == '9'
 			{
 				putchar('\n');
 			}
