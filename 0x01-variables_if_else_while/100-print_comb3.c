@@ -7,28 +7,20 @@ int main(void)
 {
 	int i, x;
 
-	while (i <= '9')
+	for (i = 0; i < 9; i++)
 	{
-		while (x <= '9')
-		{
-			if ( ! (i > x || i == x))
+		for (x = i + 1; x < 10; x++)
 			{
-				putchar(i);
-				putchar(x);
-				if (i == '8' && x == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar((i % 10) + '0');
+				putchar((x % 10) + '0');
+
+				if (i == 8 && x == 9)
+					continue;
+					
+				putchar(',');
+				putchar(' ');
 			}
-			x++;
-		}
-		x = '0';
-		i ++;
 	}
+	putchar('\n');
 	return (0);
 }
