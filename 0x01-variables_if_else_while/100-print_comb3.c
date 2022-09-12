@@ -7,19 +7,21 @@ int main(void)
 {
 	int i, x;
 
-	for (i = 48; i < 56; i++)
+	for (i = 48; i < 58; i++)
 	{
-		for (x = 49; x < 57; x++)
+		for (x = 48; x < 58; x++)
 			{
-				if (x > i)
+				if (i != x || i < x)
 				{
 					putchar(i);
 					putchar(x);
-					if (i != 56 || x != 57)
+					if (x == 57 && i == 56)
 					{
+					       	break;
+					}
 						putchar(',');
 						putchar(' ');
-					}
+					
 				}
 			}
 	}
