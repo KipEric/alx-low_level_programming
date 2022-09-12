@@ -5,21 +5,19 @@
  */
 int main(void)
 {
-	int i, x, y;
-	
-	for (i = 0; i < 8; i+)
+	int x, y, z;
+
+	for (x = 0; x < 8; x++)
 	{
-		i = i + 1;
-		for  (x = i; x < 9; x++)
+		for (y = x + 1; y < 9; y++)
 		{
-			x = x + 1;
-			for (y = x; y < 10; y++)
+			for (z = y + 1; z < 10; z++)
 			{
-				putchar((i % 10) + '0');
 				putchar((x % 10) + '0');
 				putchar((y % 10) + '0');
+				putchar((z % 10) + '0');
 
-				if (i == 7 && x == 8 && y == 9)
+				if (x == 7 && y == 8 && z == 9)
 					continue;
 
 				putchar(',');
@@ -30,3 +28,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
