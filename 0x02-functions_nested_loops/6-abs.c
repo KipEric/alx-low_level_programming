@@ -2,8 +2,8 @@
 
 /*
  *
- * main - 2-print_alphabet_x10.c
- *
+ * _abs - 2-print_alphabet_x10.c
+ * Description: Function that computes the absolute value
  * Return: 0
  */
 
