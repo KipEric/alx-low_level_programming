@@ -5,7 +5,7 @@
  * Return: 0
  */
 
-int maib(void)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
