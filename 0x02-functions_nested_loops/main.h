@@ -1,5 +1,5 @@
-#ifndef NESTED_LOOPS
-#define NESTED_LOOPS
+#ifndef ALX_H_INCLUDE
+#define ALX_H_INCLUDE
 
 int _putchar(char c);
 void print_alphabet(void);
