@@ -1,3 +1,19 @@
-VimCrypt~03!“:d
-ĞQr?Åz›™ëm—©YVpïáû™ÜoÚ£A‰O£“c%r}gé	RôBBñyZ«ª5zgÂˆsŠ°¸ÀC/`
- ÃĞ‡7|j@œiÔV_Â÷uD3¦–#E¸d©àŠ4`í‰èÄ˜â—F},Y8æ<¤Æ;´ĞØsŠT›nØ~Ä—¯µpwøæÍ.õÖFz~4¬vöcC²x¯–­Ñ•_SÚËÅÓÊ+­“©Š°öÍ¶Kª¦RP˜Âùƒ98ùšv ×&->ò5ÂevÉCni1[O&qËyìaúBÑº":ûËoâŸ×ˆC½/e?©KÉˆ¼Äº/2ÚZôtÁ¹vœ1}{øÇrj¬5) NJ´‡'ù†¹Ô§pÚ@=¸ã0Î’5Aim½IZ™5E–uiX†¥Y^c›ÙSÕÌ«D'fÔVPì.Í;¨î‘jišD¼BËÃò¾#¼ÍŠĞÆÑ~³ê¸¯¯Ö=u–ú©ƒìÜºz¥F
+#ifndef ALX_H_INCLUDED
+#define ALX_H_INCLUDED
+
+int _putchar(char);
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
+int print_last_digit(int);
+void jack_bauer(void);
+void times_table(void);
+int add(int a, int b);
+void print_to_98(int n);
+void print_times_table(int n);
+void num(int r, int n);
+
+#endif
