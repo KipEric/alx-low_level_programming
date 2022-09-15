@@ -1,14 +1,12 @@
 /**
  * print_numbers - prints the digits 1-9
  */
-void print_numbers(void);
+void print_numbers(void)
 {
-	int i = 0;
+	int i;
 
-	while (i <= 9)
-	{
-		_putchar(i + '0');
-		++i;
-	}
+	for (i = 0; i <= 9; i++)
+		_putchar((i % 10) + '0');
+
 	_putchar('\n');
 }
