@@ -5,29 +5,24 @@
  */
 void print_number(int n)
 {
-	long len, res, i, temp, expo;
+	unsigned int u, i;
 
-	res = n;
-	expo = len =  1;
-
-	if (res < 0)
+	if (n < 0)
 	{
-		res *= -1;
+		u = -n;
 		_putchar('-');
 	}
-	temp = res;
-	while (temp >= 10)
+	else
 	{
-		len++;
-		temp /= 10;
+		u = n;
 	}
-	for (i = 1; i < len; i++)
-		expo *= 10;
 
-	while (expo > 1)
+	i = 1000000000;
+	do
 	{
-		_putchar((res / expo) % 10 + '0');
-		expo /= 10;
+		if (i <= u || i == 1)
+			_putchar(u / i % 10 + '0');
+		i /= 10;
 	}
-	_putchar(res % 10 + '0');
+	while (i != 0);
 }
