@@ -2,20 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strlen - get length of a string
- * @s: The string to be modified
- *
- */
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-
-	return (i);
-}
-
-/**
  * rev_string - reverses a string
  * @s: string to reverse
  *
@@ -23,14 +9,21 @@ int _strlen(char *s)
  */
 void rev_string(char *s)
 {
-	int i, len;
-	char a;
+	char tmp;
+	int i, len1, len2;
 
-	len = _strlen(s) - 1;
-	for (i = len; i > len / 2; i--)
+	len1 = 0;
+	lent2 = 0;
+
+	while (s[len1] != '\0')
+		len1++;
+
+	len2 = len1 - 1;
+	for (i = 0; i < len1 / 2; i++)
 	{
-		a = s[i];
-		s[i] = s[len - i];
-		s[len - i] = a;
+		tmp = s[i];
+		s[i] = s[len2];
+		s[len2]=tmp;
+		len2 -= 1;
 	}
 }
