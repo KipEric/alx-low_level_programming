@@ -10,18 +10,16 @@
  */
 int main(void)
 {
-	int sum = 0;
-	char randchar;
+	int pass sum;
 
-	srand(time(0));
-
-	while (sum <= 2646)
+	srand(time(NULL));
+	sum = 0;
+	while (sum <= 2645)
 	{
-		randchar = rand() % 128;
-		write(1, &randchar, 1);
-		sum += randchar;
+		pass = rand() % 128;
+		sum += pass;
+		printf("%c", pass);
 	}
-	randchar = 2772 - sum;
-	write(1, &randchar, 1);
+	printf("%c", 2772 - sum);
 	return (0);
 }
