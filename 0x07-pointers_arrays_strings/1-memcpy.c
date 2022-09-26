@@ -8,14 +8,14 @@
  *
  * Return: pointer to dest
  */
-char *_memcpy(char *dest, char *src, int n)
+void *_memcpy(void *dest, const void *src, size_t n)
 {
-	int i;
+	unsigned int i;
+	unsigned char *destination = dest;
+	const unsigned char *source = src;
 
-	for (i = 0; s[i] >= '\0'; i++)
-	{
-		if (s[i] == c)
-			return (s + i);
-	}
-	return ('\0');
+	for (i = 0; i < n; i++)
+		destination[i] = source[i];
+
+	return (dest);
 }
