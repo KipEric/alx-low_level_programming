@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
  * _memcpy - copies n bytes from source memory to destination
  *
@@ -10,13 +9,12 @@
  *
  * Return: pointer to dest
  */
-void *_memcpy(void *dest, const void *src, size_t n)
+char *_memcpy(char *dest, char *src, int n)
 {
-	unsigned int i;
+	char *ptr = dest;
 
-	for (i = 0; i < n; i++)
-	{
-		dest[i] = src[i];
-	}
+	while (n--)
+		*ptr++ = *src++;
+
 	return (dest);
 }
