@@ -10,30 +10,24 @@
  *
  * Return: 0 on success.
  */
-int main(int ac, char *av[])
+int main(int argc, char *argv[])
 {
-	int a, b;
-	int (*f)(int, int);
+	int (*oprt)(int, int);
 
-	if (ac != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
-		return (98);
-	}
-	a = atoi(av[1]);
-	b = atoi(av[3]);
-	f = get_op_func(av[2]);
-	if (f == NULL || av[2][1] != 0)
-	{
-		printf("Error\n");
-		return (99);
-	}
-	if ((av[2][0] == '/' || av[2][0] == '%') && b == 0)
-	{
-		printf("Error\n");
-		return (100);
+		exit(98);
 	}
 
-	printf("%d\n", f(a, b));
+	oprt = get_op_func(argv[2]);
+
+	if (!oprt)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
