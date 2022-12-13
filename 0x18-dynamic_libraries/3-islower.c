@@ -1,7 +1,5 @@
 #include "main.h"
 
-
-
 /*
  *
  * main - Checks if a character is lowercase.
