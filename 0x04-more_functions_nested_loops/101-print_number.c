@@ -25,4 +25,6 @@ void print_number(int n)
 		i /= 10;
 	}
 	while (i != 0);
+	{
+	}
 }
