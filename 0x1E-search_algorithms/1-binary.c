@@ -1,4 +1,4 @@
-#include search_algos.h
+#include "search_algos.h"
 
 /**
  * binary_search - function that searches for a value in a 
@@ -13,7 +13,7 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t left = 0, right = size - 1, mid;
+	size_t i, left = 0, right = size - 1, mid;
 
 	if (array == NULL)
 		return (-1);
@@ -21,10 +21,10 @@ int binary_search(int *array, size_t size, int value)
 	while (left <= right)
 	{
 		printf("Searching in arry: ");
-		for (size_t i = left; i <= right; i++)
+		for (i = left; i <= right; i++)
 		{
-			if (i != left);
-				printf(", ");
+			if (i != left)
+			printf(", ");
 			printf("%d", array[i]);
 		}
 		printf("\n");
